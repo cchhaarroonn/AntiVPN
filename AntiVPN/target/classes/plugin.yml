@@ -1,0 +1,7 @@
+name: AntiVPN
+version: '1.0'
+main: me.charon.antivpn.AntiVPN
+api-version: 1.18
+authors: [ charon ]
+description: AntiVPN plugin will not let players join if their country is not matching enabled countries from config
+website: charon.gq

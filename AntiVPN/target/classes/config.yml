@@ -1,0 +1,4 @@
+config:
+  countries:
+    - "Croatia"
+    - "Serbia"
