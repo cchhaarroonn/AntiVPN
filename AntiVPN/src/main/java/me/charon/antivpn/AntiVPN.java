@@ -1,6 +1,5 @@
 package me.charon.antivpn;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -12,7 +11,6 @@ import org.json.JSONObject;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.sql.SQLOutput;
 import java.util.List;
 
 public final class AntiVPN extends JavaPlugin implements Listener {
