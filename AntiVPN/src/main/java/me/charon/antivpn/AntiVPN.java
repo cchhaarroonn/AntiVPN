@@ -60,10 +60,9 @@ public final class AntiVPN extends JavaPlugin implements Listener {
                 System.out.println("[AntiVPN] Address " + playerAddress + "(" + country + ") kicked because server doesn't support connections from their country!");
                 player.kickPlayer(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "AntiVPN" + ChatColor.DARK_GRAY + "]" + ChatColor.WHITE + " Your country is not supported by server");
             }
-
-        } else {
-            System.out.println("[AntiVPN] An error occurred couldn't verify connection for " + playerAddress + " ...");
-            System.out.println("[AntiVPN] Connection rejected");
+        } else if (code != 200) {
+            System.out.println("[AntiVPN] An error occurred couldn't verify connection for " + playerAddress);
+            player.kickPlayer(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "AntiVPN" + ChatColor.DARK_GRAY + "]" + ChatColor.WHITE + " API is rate limited please reconnect");
         }
     }
 
